@@ -118,18 +118,19 @@
             
             <p>Select your favorite song:</p>
 <form action="/action_page.php">
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="GEE">GEE<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Girls'Generation">Girls'Generation<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Genie">Genie<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="MR.TAXI">MR.TAXI<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Party">Party<br><br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="GEE">GEE<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Girls'Generation">Girls'Generation<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Genie">Genie<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="MR.TAXI">MR.TAXI<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Party">Party<br><br>
 
-  Your favorite browser is: <input type="text" id="result">
+  Your favorite song is: <input type="text" id="result">
   <input type="submit" value="Submit form">
 </form>
-<script>
-function myFunction(browser) {
-    document.getElementById("result").value = browser;
+
+   <script>
+function myFunction(song) {
+    document.getElementById("result").value = song;
 }
 </script>
 
